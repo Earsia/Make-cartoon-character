@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>制作一只皮卡丘</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+
+    <link rel="stylesheet" href="css/Pikachu.css">
+    <style id="styleTag"></style>
+</head>
+<body>
+<div class="code-wrapper">
+    <pre id="code"></pre>
+    <button id="slow">慢速</button>
+    <button id="middle">中速</button>
+    <button id="fast" class="active">快速</button>
+</div>
+<div class="preview-wrapper">
+    <div class="preview">
+        <div class="wrapper">
+            <div class="nose"></div>
+            <div class="eye right"></div>
+            <div class="eye left"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+            <div class="upperLip left"></div>
+            <div class="upperLip right"></div>
+            <div class="lowerLip-wrapper">
+                <div class="lowerLip"></div>
+            </div>
+    </div>
+</div>
+    <script rel="script" src="js/main.js"></script>
+    <audio>
+        <source src="https://res.cloudinary.com/sasha-tran/video/upload/v1478227626/Pokemon_Pikachu_Sound_Effect_gis313.mp3"> </source>
+    </audio>
+</div>
+<script>
+   //
+    //$(".wrapper").mouseover(function() {
+      //  audio.currentTime = 0.5;
+   //     audio.play();
+    //});
+
+    $(".wrapper").mouseout(function() {
+        audio.pause();
+        audio.currentTime = 0.5;
+    })
+</script>
+</body>
+</html>
